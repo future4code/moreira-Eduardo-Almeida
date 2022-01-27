@@ -17,50 +17,36 @@ function imprimeMensagem() {
 // EXERCÍCIOS PARA FAZER ------------------------------------------------------------------
 
 // EXERCÍCIO 01
-function calculaAreaRetangulo(altura,largura) {
-  // implemente sua lógica aqui
-  altura = prompt("Digite a altura")
-  largura = prompt("Digite a largura")
- const area = altura * largura 
- console.log(area)
- return area 
- 
+
+const altura = Number(prompt("Digite a altura"))
+const largura = Number(prompt("Digite a largura"))
+const area = [altura,largura]
+
+function calculaAreaRetangulo(calculoArea) {
+  const resultadoArea = calculoArea[0] * calculoArea [1]
+  return resultadoArea
 }
-console.log(calculaAreaRetangulo(altura,largura))
+console.log(calculaAreaRetangulo(area))
 
 // EXERCÍCIO 02
-function imprimeIdade(idade) {
+function imprimeIdade() {
   // implemente sua lógica aqui
-const anoAtual = prompt("Digite o ano atual")
-const anoDeNascimento = prompt("Digite o seu ano de nascimento")
-idade = anoAtual - anoDeNascimento
-console.log(idade)
-return idade
+
 }
-console.log(imprimeIdade(idade))
+
 // EXERCÍCIO 03
 function calculaIMC(peso, altura) {
   // implemente sua lógica aqui
-peso = prompt("Digite o seu peso")
-altura = prompt("Digite a sua altura")
-const imc = peso / (altura * 2)
-console.log(imc)
-return imc
+
 }
-console.log(calculaIMC(peso, altura))
 
 // EXERCÍCIO 04
-function imprimeInformacoesUsuario(nome, idade, email) {
+function imprimeInformacoesUsuario() {
   // implemente sua lógica aqui
   // "Meu nome é NOME, tenho IDADE anos, e o meu email é EMAIL."
-nome = prompt("Digite seu nome")
-idade = prompt("Digite a sua idade")
-email = prompt("Digite o seu email")
-let infoUsuario = ("Meu nome é", nome, "tenho", idade, "anos, e o meu email é", email, ".")
-console.log(infousuario)
-return(infoUsuario)
+
 }
-console.log(imprimeInformacoesUsuario(nome, idade, email))
+
 // EXERCÍCIO 05
 function imprimeTresCoresFavoritas() {
   // implemente sua lógica aqui
